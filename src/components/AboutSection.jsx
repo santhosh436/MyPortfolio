@@ -39,7 +39,7 @@ const AboutSection = () => {
                             <p className="leading-relaxed text-lg mb-4 sm:text-justify font-semibold "> As a dedicated and enthusiastic Junior Full Stack Developer, I bring a solid foundation in both frontend and backend technologies, complemented by hands-on experience through internships and personal projects. With a strong commitment to continuous learning and improvement, I am excited about the opportunity to contribute to innovative projects and drive technological advancements</p>
                             
                             <div className='btns flex sm:pl-16 text-black font-semibold'>
-                                <button onClick={handleResumeClick} className='bg-orange-500 mr-4 w-32 rounded flex justify-around cursor-pointer'> <IoDocumentOutline className=' text-black text-lg font-bold mt-1' /> <span>Download CV</span></button>
+                                <button onClick={handleResumeClick}  className='bg-orange-500 mr-4 w-32 rounded flex justify-around cursor-pointer'> <IoDocumentOutline className=' text-black text-lg font-bold mt-1' /> <a href=".santhoshModiResume.pdf" download='computer'><span>Download CV</span></a> </button>
                                 <button onClick={handlePortfolioClick} className='bg-orange-500 w-32 rounded cursor-pointer' >Portfolio <span>&#8594;</span></button>
                             </div>
                         </div>

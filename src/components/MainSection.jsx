@@ -4,7 +4,7 @@ import '../App.css'; // Ensure you have Tailwind CSS imported in your CSS file
 
 const MainSection = () => {
   return (
-    <section className="flex flex-col items-center md:flex-row text-white h-screen sm:pl-32 mb-40 sm:mb-0" id='home'>
+    <section className="flex flex-col items-center md:flex-row text-white h-screen sm:pl-32 " id='home'>
       {/* Portfolio Column */}
       <div className="flex-1 p-4 sm:text-left mt-4">
         <p className=' sm:text-left text-xl mt-16'>Hello!</p>

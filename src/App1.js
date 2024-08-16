@@ -4,13 +4,16 @@ import Header from './components/Header';
 import MainSection from './components/MainSection';
 import AboutSection from './components/AboutSection';
 import WhatCanIDo from './components/WhatCanIDo';
+import ExperienceEducation from './components/ExperienceEducation';
 const App = () => {
   return (
     <div>
       <Header/>
       <MainSection/>
       <AboutSection/>
-      <WhatCanIDo/>
+      <WhatCanIDo id='services'/>
+      <ExperienceEducation/>
+      
     </div>
   )
 }

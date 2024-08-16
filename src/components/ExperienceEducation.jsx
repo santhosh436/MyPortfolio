@@ -48,14 +48,14 @@ const ExperienceEducation = () => {
         <div className="ml-4 text-left text-xl">
           <p className="font-bold">{item.companyName || item.collegeName}</p>
           <p className="text-lg font-semibold">{item.role || item.branch}</p>
-          <p className="text-[17px] text-gray-500"><span className="mr-4">{item.duration}</span>  <span>{item.percentage}</span></p>
+          <p className="text-[17px] text-gray-500"><span className="mr-4">{item.duration}</span> <span className="mr-2 text-white">{showExperience? "":"-"}</span> <span>{item.percentage}</span></p>
         </div>
       </div>
     ));
   };
 
   return (
-    <div id="experience" className="  flex flex-col items-center mt-16 sm:mt-0 sm:justify-center h-11/12  sm:h-screen text-white  py-20 sm:py-0">
+    <div id="experience" className="  flex flex-col items-center mt- sm:mt-0 sm:justify-center h-11/12  sm:h-screen text-white  py-20 sm:py-0">
       <div className="mb-14 flex space-x-4">
         <button
           onClick={() => setShowExperience(true)}

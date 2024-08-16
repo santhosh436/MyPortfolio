@@ -17,3 +17,9 @@ body{
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+.navbar{
+    z-index:999;
+}
+.pt-navbar {
+    padding-top:60px
+  }

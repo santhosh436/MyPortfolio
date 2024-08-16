@@ -11,11 +11,10 @@ const AboutSection = () => {
     console.log('Portfolio button clicked');
     };
   return (
-    <div id='about'>
-        <div>
-        <section className="text-gray-600 body-font sm:mb-36 mt-20">
-            <div className="container px-5 py-16 mx-auto bg-white flex flex-col rounded-lg sm:mb-20">
-                    <p className=' text-2xl font-bold  text-center sm:text-left'>Who am I ?</p>
+    <div>
+        <section className="text-gray-600 h-screen body-font mb-96 sm:mb-0 mt-20" id='about'>
+            <div className="container px-5 mx-auto text-white flex flex-col rounded-lg py-44">
+                    <p className=' text-2xl font-bold  mb-10 text-center sm:text-left'>Who am I ?</p>
                 <div className="lg:5/12">
                     <div className="flex flex-col sm:flex-row mt-4">
                         <div className="sm:w-1/3 text-center sm:pr-3 py-6 bg-orange-500 mr-5 rounded-3xl">
@@ -35,7 +34,7 @@ const AboutSection = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-black sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        <div className="sm:w-7/12 sm:pl-8 sm:py-8 sm:border-l border-black sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                             <p className="leading-relaxed text-lg mb-4 sm:text-justify font-semibold "> As a dedicated and enthusiastic Junior Full Stack Developer, I bring a solid foundation in both frontend and backend technologies, complemented by hands-on experience through internships and personal projects. With a strong commitment to continuous learning and improvement, I am excited about the opportunity to contribute to innovative projects and drive technological advancements</p>
                             
                             <div className='btns flex sm:pl-16 text-black font-semibold'>
@@ -47,7 +46,6 @@ const AboutSection = () => {
                 </div>
             </div>
         </section>
-    </div>
     </div>
   )
 }

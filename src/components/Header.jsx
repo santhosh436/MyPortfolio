@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-gray-800 fixed w-full">
+    <nav className="bg-gray-800 fixed z-10 w-full">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -53,16 +53,16 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div className=" flex items-center justify-center sm:items-stretch sm:justify-between">
             <div className="flex-shrink-0">
-              <a href="/" className="text-white text-xl font-bold font-serif">Santhosh_Modi</a>
+              <a href="/" className="text-white mx-20 sm:mx-0 text-2xl font-bold font-serif">Santhosh_Modi</a>
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <a href="#home" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                <a href="#about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-                <a href="#Services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                <a href="#contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="#home" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Home</a>
+                <a href="#about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">About</a>
+                <a href="#services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Services</a>
+                <a href="#contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Contact</a>
               </div>
             </div>
           </div>
@@ -71,10 +71,10 @@ const Header = () => {
 
       <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} sm:hidden`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a href="#home" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-          <a href="#about" className= "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" >About</a>
-          <a href="#services" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-          <a href="#contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+          <a href="#home" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Home</a>
+          <a href="#about" className= "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu} >About</a>
+          <a href="#services" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Services</a>
+          <a href="#contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Contact</a>
         </div>
       </div>
     </nav>

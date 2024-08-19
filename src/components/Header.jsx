@@ -83,8 +83,8 @@ const Header = () => {
           <a href="#experience" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Experience</a>
           <a href="#education" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu} >Education</a>
           <div className='flex flex-col'>
-                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 mb-3 sm:mb-0 '><a href="/portfolio">Portfolio</a></button>
-                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '><a href="/contact">Contact Me</a></button>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 mb-3 sm:mb-0 '><Link to="/portfolio"></Link></button>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '><Link to="/contact"> Contact Me</Link></button>
           </div>
         </div>
 

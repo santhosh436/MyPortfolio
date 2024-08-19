@@ -56,7 +56,7 @@ const Header = () => {
           </div>
           <div className="w-full flex items-center justify-center sm:items-stretch sm:justify-around">
             <div className="flex-shrink-0">
-              <a href="/" className="text-white mx-20 sm:mx-0 text-2xl font-bold font-poppins">Santhosh_Modi</a>
+              <a href="/" className="flex text-white mx-20 sm:mx-0 text-2xl font-bold font-poppins"><p><img src="./images/logo.png" alt="" className='w-10 h-9 shadow-md' /></p><p>Santhosh Modi</p></a>
             </div>
             <div className="hidden sm:flex sm:justify-between sm:ml-6">
               <div className="flex space-x-4 font-poppins">
@@ -87,7 +87,6 @@ const Header = () => {
                 <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '><Link to= "/contact"> Contact Me</Link></button>
           </div>
         </div>
-
       </div>
     </nav>
   );

@@ -5,14 +5,15 @@ const skills = [
   { name: 'CSS', percentage: 85 },
   { name: 'JavaScript', percentage: 80 },
   { name: 'React.js', percentage: 75 },
+  { name: 'Tailwind CSS', percentage: 70 },
+  { name: 'BootStrap', percentage: 70 },
+  { name: 'Figma', percentage: 70 },
   { name: 'Java', percentage: 70 },
-  { name: 'Java', percentage: 70 },
-  { name: 'Java', percentage: 70 },
-  { name: 'Java', percentage: 70 },
-  { name: 'Java', percentage: 70 },
-  { name: 'Java', percentage: 70 },
-  { name: 'Java', percentage: 70 },
-  { name: 'Java', percentage: "70" },
+  { name: 'Core Java', percentage: 70 },
+  { name: 'Spring', percentage: 70 },
+  { name: 'Spring Boot', percentage: 70 },
+  { name: 'MySql', percentage: "70" },
+  { name: 'Typing Speed', percentage: "37WPM" },
 
   // Add more skills as needed
 ];

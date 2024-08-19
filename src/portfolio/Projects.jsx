@@ -93,7 +93,7 @@ const Projects = () => {
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`mx-2 px-2 sm:px-4 py-1 sm:py-2 font-semibold rounded ${selectedCategory === category ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
+            className={`mx-1 sm:mx-3 px-2 sm:px-4 py-1 sm:py-2 font-semibold rounded ${selectedCategory === category ? 'bg-blue-600 text-white' : 'bg-gray-200'}`}
           >
             {category}
           </button>

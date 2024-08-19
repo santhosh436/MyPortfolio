@@ -2,17 +2,17 @@ import React from 'react';
 
 const PersonalInfo = () => {
   const details = {
-    firstName: 'John',
-    lastName: 'Doe',
-    age: 28,
-    languages: ['English', 'Spanish'],
-    email: 'john.doe@example.com',
-    phoneNumber: '+1234567890',
-    nationality: 'American',
+    firstName: 'Santhosh',
+    lastName: 'Modi',
+    age: 22,
+    languages: ['English', 'Telugu'],
+    email: 'santhoshmodi051@gmail.com',
+    phoneNumber: '9701724657',
+    nationality: 'Indian',
     role: 'Full Stack Developer',
-    currentAddress: '1234 Elm Street, Springfield, USA',
-    permanentAddress: '5678 Maple Avenue, Springfield, USA',
-    qualification: 'Bachelor of Engineering in Computer Science',
+    currentAddress: 'Mango Pg Hostel,Kphp,Kukatpally',
+    permanentAddress: 'Padarupalli,Nellore,524004',
+    qualification: 'Bachelor of Engineering in Electronics and Communication',
   };
 
   return (

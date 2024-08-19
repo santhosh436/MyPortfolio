@@ -66,8 +66,8 @@ const Header = () => {
                 <a href="/#education" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Education</a>
               </div>
               <div>
-                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 '><a href="/portfolio">Portfolio</a></button>
-                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '><a href="/contact">Contact Me</a></button>
+               <a href="/portfolio"><button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 '>Portfolio</button></a> 
+               <a href="/contact"><button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '>Contact Me</button></a>
               </div>
             </div>
           </div>

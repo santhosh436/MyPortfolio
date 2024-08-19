@@ -56,7 +56,7 @@ const ExperienceEducation = () => {
 
   return (
     <div id="experience" className="  flex flex-col items-center mt- sm:mt-0 sm:justify-center h-11/12  sm:h-screen text-white  py-20 sm:py-0">
-      <div className="mb-14 flex space-x-4">
+      <div className="mb-14 flex space-x-4 " id="education">
         <button
           onClick={() => setShowExperience(true)}
           className={`px-4 py-2 text-white font-bold rounded ${showExperience ? 'bg-orange-500' : 'bg-gray-500'}`}

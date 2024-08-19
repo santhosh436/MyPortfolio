@@ -53,17 +53,21 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className=" flex items-center justify-center sm:items-stretch sm:justify-between">
+          <div className="w-full flex items-center justify-center sm:items-stretch sm:justify-around">
             <div className="flex-shrink-0">
-              <a href="/" className="text-white mx-20 sm:mx-0 text-2xl font-bold font-serif">Santhosh_Modi</a>
+              <a href="/" className="text-white mx-20 sm:mx-0 text-2xl font-bold font-poppins">Santhosh_Modi</a>
             </div>
-            <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
-                <a href="#home" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Home</a>
-                <a href="#about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">About</a>
-                <a href="#services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Services</a>
-                <a href="#experience" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Experience</a>
-                <a href="#contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Contact</a>
+            <div className="hidden sm:flex sm:justify-between sm:ml-6">
+              <div className="flex space-x-4 font-poppins">
+                <a href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Home</a>
+                <a href="/#about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">About</a>
+                <a href="/#services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Services</a>
+                <a href="/#experience" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Experience</a>
+                <a href="/#education" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Education</a>
+              </div>
+              <div>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 '><a href="/portfolio">Portfolio</a></button>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '><a href="/contact">Contact Me</a></button>
               </div>
             </div>
           </div>
@@ -72,12 +76,17 @@ const Header = () => {
 
       <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} sm:hidden`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a href="#home" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Home</a>
+          <a href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Home</a>
           <a href="#about" className= "text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu} >About</a>
           <a href="#services" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Services</a>
           <a href="#experience" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Experience</a>
-          <a href="#contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu}>Contact</a>
+          <a href="#education" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={toggleMobileMenu} >Education</a>
+          <div className='flex flex-col'>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 mb-3 sm:mb-0 '><a href="/portfolio">Portfolio</a></button>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '><a href="/contact">Contact Me</a></button>
+          </div>
         </div>
+
       </div>
     </nav>
   );

@@ -1,19 +1,19 @@
 import React from 'react'
 import './index.css';
-import Header from './components/Header';
-import MainSection from './components/MainSection';
-import AboutSection from './components/AboutSection';
-import WhatCanIDo from './components/WhatCanIDo';
-import ExperienceEducation from './components/ExperienceEducation';
+import { Route, Routes } from 'react-router-dom';
+import LandingPage from './Pages/LandingPage'
+import PortfolioPage from './Pages/PortfolioPage'
+import ContactPage from './Pages/ContactPage'
+
 const App = () => {
   return (
     <div>
-      <Header/>
-      <MainSection/>
-      <AboutSection/>
-      <WhatCanIDo id='services'/>
-      <ExperienceEducation/>
-      
+      <Routes>
+        <Route path='/' element= { <LandingPage/> } />
+        <Route path='/portfolio' element= { <PortfolioPage/> } />
+        <Route path='/Contact' element= { <ContactPage/> } />
+      </Routes>
+
     </div>
   )
 }

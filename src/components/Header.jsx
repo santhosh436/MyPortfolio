@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link } from 'react-router-dom';
 import '../App.css'; // Import Tailwind CSS
 
 const Header = () => {
@@ -66,8 +67,8 @@ const Header = () => {
                 <a href="/#education" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Education</a>
               </div>
               <div>
-               <a href="/portfolio"><button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 '>Portfolio</button></a> 
-               <a href="/contact"><button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '>Contact Me</button></a>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 '><Link to="/portfolio">Portfolio</Link></button>
+                <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '> <Link to="/contact">Contact Me</Link></button>
               </div>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaGithub,FaLinkedin,FaFacebook,FaInstagram } from "react-icons/fa";
 import { IoDocumentOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+
 const AboutSection = () => {
     const handleResumeClick = () => {
         // Logic for resume button click
@@ -27,9 +29,9 @@ const AboutSection = () => {
                             </div>
                             <div className='flex mt-4 sm:w-80 justify-center sm:ml-10 mb-4 sm:mb-0'>
                                 <div className='flex w-72 justify-around'>
-                                    <span className='cursor-pointer'><FaGithub className='text-white text-3xl' /></span>
-                                    <span className='cursor-pointer'><FaLinkedin className='text-white text-3xl' /></span>
-                                    <span className='cursor-pointer'><FaFacebook className='text-white text-3xl' /></span>
+                                    <a href="https://github.com/santhosh436" target='blank'><span className='cursor-pointer'><FaGithub className='text-white text-3xl' /></span></a>
+                                    <a href="https://www.linkedin.com/in/santhosh-modi01/" target='blank'><span className='cursor-pointer'><FaLinkedin className='text-white text-3xl' /></span></a>
+                                    <a href="https://www.figma.com/files/team/1397871902015259245/user/1397871899664171031?fuid=1397871899664171031" target='blank'><span className='cursor-pointer'><FaFacebook className='text-white text-3xl' /></span></a>
                                     <span className='cursor-pointer'><FaInstagram className='text-white text-3xl' /></span>
                                 </div>
                             </div>
@@ -38,8 +40,8 @@ const AboutSection = () => {
                             <p className="leading-relaxed text-lg mb-4 sm:text-justify font-semibold "> As a dedicated and enthusiastic Junior Full Stack Developer, I bring a solid foundation in both frontend and backend technologies, complemented by hands-on experience through internships and personal projects. With a strong commitment to continuous learning and improvement, I am excited about the opportunity to contribute to innovative projects and drive technological advancements</p>
                             
                             <div className='btns flex sm:pl-16 text-black font-semibold'>
-                                <button onClick={handleResumeClick}  className='bg-orange-500 mr-4 w-32 rounded flex justify-around cursor-pointer'> <IoDocumentOutline className=' text-black text-lg font-bold mt-1' /> <a href=".santhoshModiResume.pdf" download='computer'><span>Download CV</span></a> </button>
-                                <button onClick={handlePortfolioClick} className='bg-orange-500 w-32 rounded cursor-pointer' >Portfolio <span>&#8594;</span></button>
+                            <a href="/files/santhoshModiResume.pdf" download='santhosh_Modi_Resume.pdf'><button onClick={handleResumeClick}  className='bg-orange-500 mr-4 w-32 rounded flex justify-around cursor-pointer'> <IoDocumentOutline className=' text-black text-lg font-bold mt-1' /> <span>Download CV</span></button></a> 
+                               <Link to="/portfolio"> <button onClick={handlePortfolioClick} className='bg-orange-500 w-32 rounded cursor-pointer' >Portfolio <span>&#8594;</span></button> </Link>
                             </div>
                         </div>
                     </div>

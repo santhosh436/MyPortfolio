@@ -38,13 +38,13 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-center ">
           <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
           <div className="flex space-x-4">
-            <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/santhosh436" target="_blank" rel="noopener noreferrer">
             <FaGithub className='text-orange-400 text-3xl' />
             </a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/santhosh-modi01" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className='text-orange-400 text-3xl' />
             </a>
-            <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/mystery____lover____" target="_blank" rel="noopener noreferrer">
             <FaInstagram className='text-orange-400 text-3xl' />
             </a>
           </div>

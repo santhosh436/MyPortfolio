@@ -70,7 +70,7 @@ const [messageMessage, setMessageMessage] = useState('');
       const Contact = { name, email, subject, message };
       console.log(Contact);
   
-      fetch("http://localhost:8096/send", {
+      fetch("http://localhost:8034/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(Contact),

@@ -58,15 +58,15 @@ const Header = () => {
             <div className="flex-shrink-0">
               <a href="/" className="flex text-white mx-20 sm:mx-0 text-2xl font-bold font-poppins"><p><img src="./images/logo.png" alt="" className='w-10 h-9 shadow-md' /></p><p>Santhosh Modi</p></a>
             </div>
-            <div className="hidden sm:flex sm:justify-between sm:ml-6">
+            <div className="hidden sm:flex sm:justify-between  sm:ml-6">
               <div className="flex space-x-4 font-poppins">
-                <a href="/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Home</a>
-                <a href="/#about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">About</a>
-                <a href="/#services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Services</a>
-                <a href="/#experience" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Experience</a>
-                <a href="/#education" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-lg font-medium">Education</a>
+                <a href="/" className="text-gray-300 hover:bg-orange-500 hover:text-white px-3 rounded-md text-lg font-medium">Home</a>
+                <a href="/#about" className="text-gray-300 hover:bg-orange-500 hover:text-white px-3 rounded-md text-lg font-medium">About</a>
+                <a href="/#services" className="text-gray-300 hover:bg-orange-500 hover:text-white px-3 rounded-md text-lg font-medium">Services</a>
+                <a href="/#experience" className="text-gray-300 hover:bg-orange-500 hover:text-white px-3 rounded-md text-lg font-medium">Experience</a>
+                <a href="/#education" className="text-gray-300 hover:bg-orange-500 hover:text-white px-3 rounded-md text-lg font-medium">Education</a>
               </div>
-              <div>
+              <div className='ml-3'>
                 <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins mr-5 '><Link to="/portfolio">Portfolio</Link></button>
                 <button className='w-28 h-9 rounded-lg shadow-md shadow-black bg-orange-500 font-semibold font-poppins '> <Link to="/contact">Contact Me</Link></button>
               </div>
